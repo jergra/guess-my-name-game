@@ -57,7 +57,7 @@ export default function Home() {
   function reset() {
     setCount(0)
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
-    console.log("solution:", solution)
+    //console.log("solution:", solution)
     setLetter0('')
     setLetter1('')
     setLetter2('')
@@ -195,12 +195,12 @@ export default function Home() {
     
   }, []);
 
-  console.log("solution:", solution)
+  //console.log("solution:", solution)
 
   const letterTyped = (letter) => (event) => {
-      console.log('event:', event)
-      console.log("letter:", letter)
-      console.log("count:", count)
+      //console.log('event:', event)
+      //console.log("letter:", letter)
+      //console.log("count:", count)
     if (count === 0) {
       setLetter0(letter)
     }
@@ -264,48 +264,48 @@ export default function Home() {
     setWordString(wordString + letter)
 
     setCount(count + 1)
-    console.log("wordstring, count:", wordString, count)
+    //console.log("wordstring, count:", wordString, count)
     if ((count === 4) && (firstWord.length === 0)) {
         setLetter4('')
         setCount(count)
         setWordString(wordString.substring(0, wordString.length))
-        console.log("extra letter removed, word entered")
-        console.log("wordstring, count corrected:", wordString, count)
+        //console.log("extra letter removed, word entered")
+        //console.log("wordstring, count corrected:", wordString, count)
         enter()
     }
     if ((count === 8) && (secondWord.length === 0)) {
         setLetter8('')
         setCount(count)
         setWordString(wordString.substring(0, wordString.length))
-        console.log("extra letter removed, word entered")
-        console.log("wordstring, count corrected:", wordString, count)
+        //console.log("extra letter removed, word entered")
+        //console.log("wordstring, count corrected:", wordString, count)
         enter()
     }
     if ((count === 12) && (thirdWord.length === 0)) {
         setLetter12('')
         setCount(count)
         setWordString(wordString.substring(0, wordString.length))
-        console.log("extra letter removed, word entered")
-        console.log("wordstring, count corrected:", wordString, count)
+        //console.log("extra letter removed, word entered")
+        //console.log("wordstring, count corrected:", wordString, count)
         enter()
     }
     if ((count === 16) && (fourthWord.length === 0)) {
         setLetter16('')
         setCount(count)
         setWordString(wordString.substring(0, wordString.length))
-        console.log("extra letter removed, word entered")
-        console.log("wordstring, count corrected:", wordString, count)
+        //console.log("extra letter removed, word entered")
+        //console.log("wordstring, count corrected:", wordString, count)
         enter()
     }
     if ((count === 20) && (fifthWord.length === 0)) {
-        ////setLetter20('')
+        //setLetter20('')
         setCount(count)
         setWordString(wordString.substring(0, wordString.length))
-        console.log("extra letter removed, word entered")
-        console.log("wordstring, count corrected:", wordString, count)
+        //console.log("extra letter removed, word entered")
+        //console.log("wordstring, count corrected:", wordString, count)
         enter()
     }
-    console.log("wordString1, count:", wordString, count)
+    //console.log("wordString1, count:", wordString, count)
     if (showConfetti) {
       reset()
     }
@@ -318,44 +318,44 @@ export default function Home() {
       if (names.includes(wordString.toLowerCase())) {
         setFirstWord(wordString)
       }
-      console.log("wordString:", wordString)
-      console.log("firstWord:", firstWord)
+      //console.log("wordString:", wordString)
+      //console.log("firstWord:", firstWord)
     }
     
     if (wordString.length === 8) {
       if (names.includes(wordString.substring(4, 8).toLowerCase())) {
         setSecondWord(wordString.substring(4, 8))
       }
-      console.log("wordString:", wordString)
-      console.log("secondWord:", secondWord)
+      //console.log("wordString:", wordString)
+      //console.log("secondWord:", secondWord)
     }
     
     if (wordString.length === 12) {
       if (names.includes(wordString.substring(8, 12).toLowerCase())) {
         setThirdWord(wordString.substring(8, 12))
       }
-      console.log("wordString:", wordString)
-      console.log("thirdWord:", thirdWord)
+      //console.log("wordString:", wordString)
+      //console.log("thirdWord:", thirdWord)
     }
 
     if (wordString.length === 16) {
       if (names.includes(wordString.substring(12, 16).toLowerCase())) {
         setFourthWord(wordString.substring(12, 16))
       }
-      console.log("wordString:", wordString)
-      console.log("fourthWord:", fourthWord)
+      //console.log("wordString:", wordString)
+      //console.log("fourthWord:", fourthWord)
     }
 
     if (wordString.length === 20) {
       if (names.includes(wordString.substring(16, 20).toLowerCase())) {
         setFifthWord(wordString.substring(16, 20))
       }
-      console.log("wordString:", wordString)
-      console.log("fifthWord:", fifthWord)
+      //console.log("wordString:", wordString)
+      //console.log("fifthWord:", fifthWord)
     }
 
-    console.log("firstWord, secondWord, thirdWord, fourthWord, fifthWord:", 
-                    firstWord, secondWord, thirdWord, fourthWord, fifthWord)
+    //console.log("firstWord, secondWord, thirdWord, fourthWord, fifthWord:", 
+    //                firstWord, secondWord, thirdWord, fourthWord, fifthWord)
 
     if (wordString.length === 4) {
       document.getElementById("one")!.style.border = "solid black 0"
@@ -784,13 +784,13 @@ export default function Home() {
   }
 
   function back() {
-    console.log("count before back:", count)
+    //console.log("count before back:", count)
     if ( ((count === 4) && (firstWord.length > 0)) ||
         ((count === 8) && (secondWord.length > 0)) || 
         ((count === 12) && (thirdWord.length > 0)) || 
         ((count === 16) && (fourthWord.length > 0)) ||
         ((count === 20) && (fifthWord.length > 0)) ) {
-      console.log("cannot go back")
+      //console.log("cannot go back")
     } else {
       setCount(count - 1)
       setWordString(wordString.substring(0, wordString.length - 1))
@@ -855,7 +855,7 @@ export default function Home() {
         setLetter19('')
       }
     }
-    console.log("count after back:", count)
+    //console.log("count after back:", count)
     if (fifthWord.length === 4) {
       reset()
     }
