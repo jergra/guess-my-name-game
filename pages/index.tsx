@@ -63,7 +63,7 @@ export default function Home() {
     document.getElementById("four")!.style.border = "solid black 2px"
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
     console.log("solution in useEffect:", solution)
-    const input = document.getElementById("one");
+    const input = document.getElementById("one")!;
     input.focus();
   }, []);
 
@@ -281,84 +281,84 @@ export default function Home() {
   
   function advanceTheFocus() {
     if (count === 0) {
-      const input = document.getElementById("two");
+      const input = document.getElementById("two")!;
       input.focus();
     }
     if (count === 1) {
-      const input = document.getElementById("three");
+      const input = document.getElementById("three")!;
       input.focus();
     }
     if (count === 2) {
-      const input = document.getElementById("four");
+      const input = document.getElementById("four")!;
       input.focus();
     }
     if (count === 3) {
-      const input = document.getElementById("five");
+      const input = document.getElementById("five")!;
       input.focus();
     }
     if (count === 4) {
-      const input = document.getElementById("six");
+      const input = document.getElementById("six")!;
       input.focus();
     }
     if (count === 5) {
-      const input = document.getElementById("seven");
+      const input = document.getElementById("seven")!;
       input.focus();
     }
     if (count === 6) {
-      const input = document.getElementById("eight");
+      const input = document.getElementById("eight")!;
       input.focus();
     }
     if (count === 7) {
-      const input = document.getElementById("nine");
+      const input = document.getElementById("nine")!;
       input.focus();
     }
     if (count === 8) {
-      const input = document.getElementById("ten");
+      const input = document.getElementById("ten")!;
       input.focus();
     }
     if (count === 9) {
-      const input = document.getElementById("eleven");
+      const input = document.getElementById("eleven")!;
       input.focus();
     }
     if (count === 10) {
-      const input = document.getElementById("twelve");
+      const input = document.getElementById("twelve")!;
       input.focus();
     }
     if (count === 11) {
-      const input = document.getElementById("thirteen");
+      const input = document.getElementById("thirteen")!;
       input.focus();
     }
     if (count === 12) {
-      const input = document.getElementById("fourteen");
+      const input = document.getElementById("fourteen")!;
       input.focus();
     }
     if (count === 13) {
-      const input = document.getElementById("fifteen");
+      const input = document.getElementById("fifteen")!;
       input.focus();
     }
     if (count === 14) {
-      const input = document.getElementById("sixteen");
+      const input = document.getElementById("sixteen")!;
       input.focus();
     }
     if (count === 15) {
-      const input = document.getElementById("seventeen");
+      const input = document.getElementById("seventeen")!;
       input.focus();
     }
     if (count === 16) {
-      const input = document.getElementById("eighteen");
+      const input = document.getElementById("eighteen")!;
       input.focus();
     }
     if (count === 17) {
-      const input = document.getElementById("nineteen");
+      const input = document.getElementById("nineteen")!;
       input.focus();
     }
     if (count === 18) {
-      const input = document.getElementById("twenty");
+      const input = document.getElementById("twenty")!;
       input.focus();
     }
     if (count === 19) {
       //console.log('show solution')
-      const input = document.getElementById("twenty-one");
+      const input = document.getElementById("twenty-one")!;
       input.focus();
     }
   }
@@ -462,7 +462,7 @@ export default function Home() {
                   document.getElementById("seven")!.style.border = "solid black 0"
                   document.getElementById("eight")!.style.border = "solid black 0"
                   setCount(20)
-                  const input = document.getElementById("twenty-one");
+                  const input = document.getElementById("twenty-one")!;
                   input.focus();
                 }
               }
@@ -488,7 +488,7 @@ export default function Home() {
           document.getElementById("eight")!.style.border = "solid black 0"
           setTimeout(closeModal1, 2000)
           setShowModal(true)
-          const input = document.getElementById("one");
+          const input = document.getElementById("one")!;
           input.focus();
         }
       }
@@ -550,7 +550,7 @@ export default function Home() {
                   document.getElementById("eleven")!.style.border = "solid black 0"
                   document.getElementById("twelve")!.style.border = "solid black 0"
                   setCount(20)
-                  const input = document.getElementById("twenty-one");
+                  const input = document.getElementById("twenty-one")!;
                   input.focus()
                 }
               }
@@ -573,7 +573,7 @@ export default function Home() {
           document.getElementById("ten")!.style.border = "solid black 0"
           document.getElementById("eleven")!.style.border = "solid black 0"
           document.getElementById("twelve")!.style.border = "solid black 0"
-          const input = document.getElementById("five");
+          const input = document.getElementById("five")!;
           input.focus();
           setTimeout(closeModal2, 2000)
           setShowModal(true)
@@ -637,7 +637,7 @@ export default function Home() {
                   document.getElementById("fifteen")!.style.border = "solid black 0"
                   document.getElementById("sixteen")!.style.border = "solid black 0"
                   setCount(20)
-                  const input = document.getElementById("twenty-one");
+                  const input = document.getElementById("twenty-one")!;
                   input.focus();
                 }
               }
@@ -663,7 +663,7 @@ export default function Home() {
           document.getElementById("sixteen")!.style.border = "solid black 0"
           setTimeout(closeModal3, 2000)
           setShowModal(true)
-          const input = document.getElementById("nine");
+          const input = document.getElementById("nine")!;
           input.focus();
         }
       }
@@ -725,7 +725,7 @@ export default function Home() {
                   document.getElementById("nineteen")!.style.border = "solid black 0"
                   document.getElementById("twenty")!.style.border = "solid black 0"
                   setCount(20)
-                  const input = document.getElementById("twenty-one");
+                  const input = document.getElementById("twenty-one")!;
                   input.focus();
                 }
               }
@@ -751,7 +751,7 @@ export default function Home() {
           document.getElementById("twenty")!.style.border = "solid black 0"
           setTimeout(closeModal4, 2000)
           setShowModal(true)
-          const input = document.getElementById("thirteen");
+          const input = document.getElementById("thirteen")!;
           input.focus();
         }
       }
@@ -817,7 +817,7 @@ export default function Home() {
             document.getElementById("eighteen")!.style.border = "solid black 0px"
             document.getElementById("nineteen")!.style.border = "solid black 0px"
             document.getElementById("twenty")!.style.border = "solid black 0px"
-            const input = document.getElementById("twenty-one");
+            const input = document.getElementById("twenty-one")!;
             input.focus();
           } else {
             setShowConfetti(true)
@@ -825,7 +825,7 @@ export default function Home() {
             document.getElementById("eighteen")!.style.border = "solid black 0"
             document.getElementById("nineteen")!.style.border = "solid black 0"
             document.getElementById("twenty")!.style.border = "solid black 0"
-            const input = document.getElementById("twenty-one");
+            const input = document.getElementById("twenty-one")!;
             input.focus();
           }
 
@@ -840,7 +840,7 @@ export default function Home() {
           setCount(16)
           setTimeout(closeModal5, 2000)
           setShowModal(true)
-          const input = document.getElementById("seventeen");
+          const input = document.getElementById("seventeen")!;
           input.focus();
         }
       }
@@ -939,120 +939,120 @@ export default function Home() {
   function closeModal1() {
     setWordString('')
     setShowModal(false)
-    const input = document.getElementById("one");
+    const input = document.getElementById("one")!;
     input.focus();
   }
   function closeModal2() {
     setWordString(wordString.substring(0, 4))
     setShowModal(false)
-    const input = document.getElementById("five");
+    const input = document.getElementById("five")!;
     input.focus();
   }
   function closeModal3() {
     setWordString(wordString.substring(0, 8))
     setShowModal(false)
-    const input = document.getElementById("nine");
+    const input = document.getElementById("nine")!;
     input.focus();
   }
   function closeModal4() {
     setWordString(wordString.substring(0, 12))
     setShowModal(false)
-    const input = document.getElementById("thirteen");
+    const input = document.getElementById("thirteen")!;
     input.focus();
   }
   function closeModal5() {
     setWordString(wordString.substring(0, 16))
     setShowModal(false)
-    const input = document.getElementById("seventeen");
+    const input = document.getElementById("seventeen")!;
     input.focus();
   }
   function closeSolution() {
     setShowSolution(false)
     //reset()
-    const input = document.getElementById("twenty-one");
+    const input = document.getElementById("twenty-one")!;
     input.focus();
   }
 
   function resetFocus() {
     console.log('count in resetFocus:', count)
     if (count === 0) {
-      const input = document.getElementById("one");
+      const input = document.getElementById("one")!;
       input.focus();
     }
     if (count === 1) {
-      const input = document.getElementById("two");
+      const input = document.getElementById("two")!;
       input.focus();
     }
     if (count === 2) {
-      const input = document.getElementById("three");
+      const input = document.getElementById("three")!;
       input.focus();
     }
     if (count === 3) {
-      const input = document.getElementById("four");
+      const input = document.getElementById("four")!;
       input.focus();
     }
     if (count === 4) {
-      const input = document.getElementById("five");
+      const input = document.getElementById("five")!;
       input.focus();
     }
     if (count === 5) {
-      const input = document.getElementById("six");
+      const input = document.getElementById("six")!;
       input.focus();
     }
     if (count === 6) {
-      const input = document.getElementById("seven");
+      const input = document.getElementById("seven")!;
       input.focus();
     }
     if (count === 7) {
-      const input = document.getElementById("eight");
+      const input = document.getElementById("eight")!;
       input.focus();
     }
     if (count === 8) {
-      const input = document.getElementById("nine");
+      const input = document.getElementById("nine")!;
       input.focus();
     }
     if (count === 9) {
-      const input = document.getElementById("ten");
+      const input = document.getElementById("ten")!;
       input.focus();
     }
     if (count === 10) {
-      const input = document.getElementById("eleven");
+      const input = document.getElementById("eleven")!;
       input.focus();
     }
     if (count === 11) {
-      const input = document.getElementById("twelve");
+      const input = document.getElementById("twelve")!;
       input.focus();
     }
     if (count === 12) {
-      const input = document.getElementById("thirteen");
+      const input = document.getElementById("thirteen")!;
       input.focus();
     }
     if (count === 13) {
-      const input = document.getElementById("fourteen");
+      const input = document.getElementById("fourteen")!;
       input.focus();
     }
     if (count === 14) {
-      const input = document.getElementById("fifteen");
+      const input = document.getElementById("fifteen")!;
       input.focus();
     }
     if (count === 15) {
-      const input = document.getElementById("sixteen");
+      const input = document.getElementById("sixteen")!;
       input.focus();
     }
     if (count === 16) {
-      const input = document.getElementById("seventeen");
+      const input = document.getElementById("seventeen")!;
       input.focus();
     }
     if (count === 17) {
-      const input = document.getElementById("eighteen");
+      const input = document.getElementById("eighteen")!;
       input.focus();
     }
     if (count === 18) {
-      const input = document.getElementById("nineteen");
+      const input = document.getElementById("nineteen")!;
       input.focus();
     }
     if (count === 19) {
-      const input = document.getElementById("twenty");
+      const input = document.getElementById("twenty")!;
       input.focus();
     }
   }
@@ -1060,83 +1060,83 @@ export default function Home() {
   function resetFocusBack() {
     console.log('count in resetFocusBack:', count)
     if (count === 1) {
-      const input = document.getElementById("one");
+      const input = document.getElementById("one")!;
       input.focus();
     }
     if (count === 2) {
-      const input = document.getElementById("two");
+      const input = document.getElementById("two")!;
       input.focus();
     }
     if (count === 3) {
-      const input = document.getElementById("three");
+      const input = document.getElementById("three")!;
       input.focus();
     }
     if (count === 4) {
-      const input = document.getElementById("four");
+      const input = document.getElementById("four")!;
       input.focus();
     }
     if (count === 5) {
-      const input = document.getElementById("five");
+      const input = document.getElementById("five")!;
       input.focus();
     }
     if (count === 6) {
-      const input = document.getElementById("six");
+      const input = document.getElementById("six")!;
       input.focus();
     }
     if (count === 7) {
-      const input = document.getElementById("seven");
+      const input = document.getElementById("seven")!;
       input.focus();
     }
     if (count === 8) {
-      const input = document.getElementById("eight");
+      const input = document.getElementById("eight")!;
       input.focus();
     }
     if (count === 9) {
-      const input = document.getElementById("nine");
+      const input = document.getElementById("nine")!;
       input.focus();
     }
     if (count === 10) {
-      const input = document.getElementById("ten");
+      const input = document.getElementById("ten")!;
       input.focus();
     }
     if (count === 11) {
-      const input = document.getElementById("eleven");
+      const input = document.getElementById("eleven")!;
       input.focus();
     }
     if (count === 12) {
-      const input = document.getElementById("twelve");
+      const input = document.getElementById("twelve")!;
       input.focus();
     }
     if (count === 13) {
-      const input = document.getElementById("thirteen");
+      const input = document.getElementById("thirteen")!;
       input.focus();
     }
     if (count === 14) {
-      const input = document.getElementById("fourteen");
+      const input = document.getElementById("fourteen")!;
       input.focus();
     }
     if (count === 15) {
-      const input = document.getElementById("fifteen");
+      const input = document.getElementById("fifteen")!;
       input.focus();
     }
     if (count === 16) {
-      const input = document.getElementById("sixteen");
+      const input = document.getElementById("sixteen")!;
       input.focus();
     }
     if (count === 17) {
-      const input = document.getElementById("seventeen");
+      const input = document.getElementById("seventeen")!;
       input.focus();
     }
     if (count === 18) {
-      const input = document.getElementById("eighteen");
+      const input = document.getElementById("eighteen")!;
       input.focus();
     }
     if (count === 19) {
-      const input = document.getElementById("nineteen");
+      const input = document.getElementById("nineteen")!;
       input.focus();
     }
     if (count === 20) {
-      const input = document.getElementById("twenty");
+      const input = document.getElementById("twenty")!;
       input.focus();
     }
   }
@@ -1211,7 +1211,7 @@ export default function Home() {
     document.getElementById("eighteen")!.style.background = "rgb(59, 130, 246)"
     document.getElementById("nineteen")!.style.background = "rgb(59, 130, 246)"
     document.getElementById("twenty")!.style.background = "rgb(59, 130, 246)"
-    const input = document.getElementById("one");
+    const input = document.getElementById("one")!;
     input.focus();
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
     console.log("solution:", solution)
