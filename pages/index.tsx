@@ -62,17 +62,17 @@ export default function Home() {
     document.getElementById("three")!.style.border = "solid black 2px"
     document.getElementById("four")!.style.border = "solid black 2px"
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
-    console.log("solution in useEffect:", solution)
+    //console.log("solution in useEffect:", solution)
     const input = document.getElementById("one")!;
     input.focus();
   }, []);
 
-  console.log("solution underneath useEffect:", solution)
+  //console.log("solution underneath useEffect:", solution)
 
 
   const letterClicked = (letter) => () => {
-    console.log("letter in letterClicked:", letter)
-    console.log("wordstring, count in letterClicked - before:", wordString, count)
+    //console.log("letter in letterClicked:", letter)
+    //console.log("wordstring, count in letterClicked - before:", wordString, count)
     
     setTheLetter(letter)
 
@@ -81,7 +81,7 @@ export default function Home() {
     setWordString(wordString + letter)
 
     setCount(count + 1)
-    console.log("wordstring, count in letterClicked - after:", wordString, count)
+    //console.log("wordstring, count in letterClicked - after:", wordString, count)
 
     if ((count === 4) && (firstWord.length === 0)) {
         setLetter4('')
@@ -132,7 +132,7 @@ export default function Home() {
   
   const handleSubmit = event => {
     event.preventDefault();
-    console.log("you have input:", "  ", letter0, letter1, letter2, letter3, "  ", letter4, letter5, 
+    //console.log("you have input:", "  ", letter0, letter1, letter2, letter3, "  ", letter4, letter5, 
               letter6, letter7, "  ", letter8, letter9, letter10, letter11, "  ", letter12, letter13, 
               letter14, letter15, "  ", letter16, letter17, letter18, letter19);
   
@@ -156,8 +156,8 @@ export default function Home() {
     
   const letterTyped = (event) => {
     
-    console.log('event in letterTyped:', event)
-    console.log("wordstring, count in letterTyped - before:", wordString, count)
+    //console.log('event in letterTyped:', event)
+    //console.log("wordstring, count in letterTyped - before:", wordString, count)
     setTheLetter(event)
 
     advanceTheFocus()
@@ -165,7 +165,7 @@ export default function Home() {
     setWordString(wordString + event.toUpperCase())
 
     setCount(count + 1)
-    console.log("wordstring, count in letterTyped - after:", wordString, count)
+    //console.log("wordstring, count in letterTyped - after:", wordString, count)
 
     if ((count === 4) && (firstWord.length === 0)) {
         setLetter4('')
@@ -371,39 +371,39 @@ export default function Home() {
       if (names.includes(wordString.toLowerCase())) {
         setFirstWord(wordString)
       }
-      console.log("wordString.length=4, firstWord entered:", wordString, firstWord)
+      //console.log("wordString.length=4, firstWord entered:", wordString, firstWord)
     }
     
     if (wordString.length === 8) {
       if (names.includes(wordString.substring(4, 8).toLowerCase())) {
         setSecondWord(wordString.substring(4, 8))
       }
-      console.log("wordString.length=8, secondWord entered:", wordString, secondWord)
+      //console.log("wordString.length=8, secondWord entered:", wordString, secondWord)
     }
     
     if (wordString.length === 12) {
       if (names.includes(wordString.substring(8, 12).toLowerCase())) {
         setThirdWord(wordString.substring(8, 12))
       }
-      console.log("wordString.length=12, thirdWord entered:", wordString, thirdWord)
+      //console.log("wordString.length=12, thirdWord entered:", wordString, thirdWord)
     }
 
     if (wordString.length === 16) {
       if (names.includes(wordString.substring(12, 16).toLowerCase())) {
         setFourthWord(wordString.substring(12, 16))
       }
-      console.log("wordString.length=16, fourthWord entered:", wordString, fourthWord)
+      //console.log("wordString.length=16, fourthWord entered:", wordString, fourthWord)
     }
 
     if (wordString.length === 20) {
       if (names.includes(wordString.substring(16, 20).toLowerCase())) {
         setFifthWord(wordString.substring(16, 20))
       }
-      console.log("wordString.length=20, fifthWord entered:", wordString, fifthWord)
+      //console.log("wordString.length=20, fifthWord entered:", wordString, fifthWord)
     }
 
-    console.log("firstWord, secondWord, thirdWord, fourthWord, fifthWord in enter:", 
-                    firstWord, secondWord, thirdWord, fourthWord, fifthWord)
+    //console.log("firstWord, secondWord, thirdWord, fourthWord, fifthWord in enter:", 
+     //               firstWord, secondWord, thirdWord, fourthWord, fifthWord)
 
     if (wordString.length === 4) {
       document.getElementById("one")!.style.border = "solid black 0"
@@ -859,7 +859,7 @@ export default function Home() {
         ((count === 12) && (thirdWord.length > 0)) || 
         ((count === 16) && (fourthWord.length > 0)) ||
         ((count === 20) && (fifthWord.length > 0)) ) {
-      console.log("cannot go back")
+      //console.log("cannot go back")
       resetFocus()
     } else {
       setCount(count - 1)
@@ -974,7 +974,7 @@ export default function Home() {
   }
 
   function resetFocus() {
-    console.log('count in resetFocus:', count)
+    //console.log('count in resetFocus:', count)
     if (count === 0) {
       const input = document.getElementById("one")!;
       input.focus();
@@ -1058,7 +1058,7 @@ export default function Home() {
   }
 
   function resetFocusBack() {
-    console.log('count in resetFocusBack:', count)
+    //console.log('count in resetFocusBack:', count)
     if (count === 1) {
       const input = document.getElementById("one")!;
       input.focus();
@@ -1214,7 +1214,7 @@ export default function Home() {
     const input = document.getElementById("one")!;
     input.focus();
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
-    console.log("solution:", solution)
+    //console.log("solution:", solution)
   }
   
   
@@ -1257,7 +1257,7 @@ export default function Home() {
 
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>guess-my-name</title>
+        <title>Guess My Name</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
