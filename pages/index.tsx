@@ -1575,7 +1575,7 @@ export default function Home() {
           type="text"
           id="twenty-one"
           value={letter20}
-          onChange={() => letterTyped(event.target.value)}
+          onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
           className="focus:outline-none focus:text-transparent font-bold text-center text-blue-100 bg-transparent rounded w-7 h-7" 
         />
