@@ -133,8 +133,8 @@ export default function Home() {
   const handleSubmit = event => {
     event.preventDefault();
     //console.log("you have input:", "  ", letter0, letter1, letter2, letter3, "  ", letter4, letter5, 
-              letter6, letter7, "  ", letter8, letter9, letter10, letter11, "  ", letter12, letter13, 
-              letter14, letter15, "  ", letter16, letter17, letter18, letter19);
+     //         letter6, letter7, "  ", letter8, letter9, letter10, letter11, "  ", letter12, letter13, 
+      //        letter14, letter15, "  ", letter16, letter17, letter18, letter19);
   
     if (event.keyCode === 13) {
       enter();  
