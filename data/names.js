@@ -650,6 +650,7 @@ export const names = [
     "oona",
     "opal",
     "opie",
+    "oral",
     "orel",
     "orly",
     "orsa",

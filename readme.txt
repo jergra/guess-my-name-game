@@ -4,7 +4,7 @@ C:\dev\guess-my-name-game
 
 This is a Wordle variant.
 
-Code from C:\dev\guess-this-name has been reduced.
+Code from C:\dev\guess-this-name has been reduced, functionality improved.
 
 start:
     npm run dev 
@@ -19,7 +19,6 @@ update:
 
 
 to do:
-    enter letters from the keyboard
     improve appearance of keyboard in mobile
     modularization, refactoring of code
     look into react hooks
