@@ -19,7 +19,6 @@ update:
 
 
 to do:
-    improve appearance of keyboard in mobile
     modularization, refactoring of code
     look into react hooks
 
