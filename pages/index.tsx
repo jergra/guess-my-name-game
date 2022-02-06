@@ -1383,7 +1383,7 @@ export default function Home() {
             onClick={() => setShowRules(true)}
             className="h-6 text-gray-500 cursor-pointer" 
           />
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-2xl lg:text-4xl font-semibold">
             GUESS MY NAME
           </h1>
           <div
@@ -1391,7 +1391,7 @@ export default function Home() {
           ></div>
         </div>
 
-        <div className="w-full mt-2 border border-gray-300">
+        <div className="w-3/4 mt-2 border border-gray-300">
           
         </div>
 
