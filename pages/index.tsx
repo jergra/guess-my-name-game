@@ -1269,10 +1269,10 @@ export default function Home() {
                 
                 <div className="flex flex-col items-start mx-6 my-3">
                   <div className="text-3xl font-semibold">How To Play</div>
-                  <div className="mt-2 text-lg text-blueGray-500">Guess the name in 5 tries.</div>
-                  <div className="text-lg text-blueGray-500">Each guess must be a valid 4 letter name.</div>
-                  <div className="text-lg text-blueGray-500">Hit the enter button to submit.</div>
-                  <div className="text-lg text-blueGray-500">If a tile has changed color, that letter is in the name.</div>
+                  <p className="mt-2 text-blueGray-500">Guess the name in 5 tries.</p>
+                  <p className="text-blueGray-500">Each guess must be a valid 4 letter name.</p>
+                  <p className="text-blueGray-500">Hit the enter button to submit.</p>
+                  <p className="text-blueGray-500">If a tile has changed color, that letter is in the name.</p>
                   <div className="mt-2 font-bold">Examples</div>
                   <div className="flex flex-col items-start mt-2">
                     <div className="flex">
@@ -1289,8 +1289,8 @@ export default function Home() {
                         className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
                       >E</div>
                     </div>
-                    <div className="text-lg text-blueGray-500">The letter <b>T</b> is in the name but in the wrong spot.</div>
-                    <div className="text-lg text-blueGray-500">The letters <b>K</b>, <b>A</b>, and <b>E</b> are not in the name.</div>
+                    <p className="text-blueGray-500">The letter <b>T</b> is in the name but in the wrong spot.</p>
+                    <p className="text-blueGray-500">The letters <b>K</b>, <b>A</b>, and <b>E</b> are not in the name.</p>
                     <div className="flex mt-2">
                       <div
                         className="flex justify-center items-center m-1 font-bold text-white bg-[#6aaa64] rounded w-7 h-7"
@@ -1305,8 +1305,8 @@ export default function Home() {
                         className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
                       >D</div>
                     </div>
-                    <div className="text-lg text-blueGray-500">The letter <b>B</b>  is in the correct spot.</div>
-                    <div className="text-lg text-blueGray-500">The letters <b>R</b>, <b>A</b>, and <b>D</b> are not in the name.</div>
+                    <p className="text-blueGray-500">The letter <b>B</b>  is in the correct spot.</p>
+                    <p className="text-blueGray-500">The letters <b>R</b>, <b>A</b>, and <b>D</b> are not in the name.</p>
                     
                   </div>
                 </div>
