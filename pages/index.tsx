@@ -1406,7 +1406,7 @@ export default function Home() {
         
         <div className="flex">
  
-        <div className="flex flex-wrap items-center justify-center flex-1 px-10 py-1 mt-3 text-center bg-blue-100 w-60">
+        <div className="flex flex-wrap items-center justify-center flex-1 px-10 py-1 mt-3 text-center w-60">
         
         <form id="form">
         
@@ -1588,96 +1588,96 @@ export default function Home() {
          
         </div>
         
-        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-2 bg-pink-100 max-h-4xl sm:w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-pink-100 max-h-4xl sm:w-full">
           <OutsideClick>
           <div>
           <div>
-          <button id="q" onClick={letterClicked('Q')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="q" onClick={letterClicked('Q')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             Q
           </button>
-          <button id="w" onClick={letterClicked('W')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="w" onClick={letterClicked('W')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             W
           </button>
-          <button id="e" onClick={letterClicked('E')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="e" onClick={letterClicked('E')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             E
           </button>
-          <button id="r" onClick={letterClicked('R')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="r" onClick={letterClicked('R')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             R
           </button>
-          <button id="t" onClick={letterClicked('T')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="t" onClick={letterClicked('T')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             T
           </button>
-          <button id="y" onClick={letterClicked('Y')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="y" onClick={letterClicked('Y')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             Y
           </button>
-          <button id="u" onClick={letterClicked('U')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="u" onClick={letterClicked('U')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             U
           </button>
-          <button id="i" onClick={letterClicked('I')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="i" onClick={letterClicked('I')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             I
           </button>
-          <button id="o" onClick={letterClicked('O')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="o" onClick={letterClicked('O')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             O
           </button>
-          <button id="p" onClick={letterClicked('P')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="p" onClick={letterClicked('P')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             P
           </button>
           </div>
           <div>
-          <button id="a" onClick={letterClicked('A')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="a" onClick={letterClicked('A')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             A
           </button>
-          <button id="s" onClick={letterClicked('S')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="s" onClick={letterClicked('S')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             S
           </button>
-          <button id="d" onClick={letterClicked('D')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="d" onClick={letterClicked('D')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             D
           </button>
-          <button id="f" onClick={letterClicked('F')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="f" onClick={letterClicked('F')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             F
           </button>
-          <button id="g" onClick={letterClicked('G')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="g" onClick={letterClicked('G')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             G
           </button>
-          <button id="h" onClick={letterClicked('H')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="h" onClick={letterClicked('H')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             H
           </button>
-          <button id="j" onClick={letterClicked('J')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="j" onClick={letterClicked('J')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             J
           </button>
-          <button id="k" onClick={letterClicked('K')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="k" onClick={letterClicked('K')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             K
           </button>
-          <button id="l" onClick={letterClicked('L')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="l" onClick={letterClicked('L')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             L
           </button>
           </div>
           <div>
-          <button id="enter" onClick={enter} className="w-20 h-12 m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="enter" onClick={enter} className="w-[55px] h-7 text-xs lg:h-12 lg:w-20 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             ENTER
           </button>
-          <button id="z" onClick={letterClicked('Z')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="z" onClick={letterClicked('Z')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             Z
           </button>
-          <button id="x" onClick={letterClicked('X')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="x" onClick={letterClicked('X')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             X
           </button>
-          <button id="c" onClick={letterClicked('C')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="c" onClick={letterClicked('C')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             C
           </button>
-          <button id="v" onClick={letterClicked('V')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="v" onClick={letterClicked('V')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             V
           </button>
-          <button id="b" onClick={letterClicked('B')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="b" onClick={letterClicked('B')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             B
           </button>
-          <button id="n" onClick={letterClicked('N')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="n" onClick={letterClicked('N')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             N
           </button>
-          <button id="m" onClick={letterClicked('M')} className="h-12 m-1 font-bold text-center text-white bg-blue-500 rounded w-11 hover:bg-blue-700">
+          <button id="m" onClick={letterClicked('M')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             M
           </button>
-          <button id="back" onClick={back} className="w-20 h-12 m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="back" onClick={back} className="w-11 h-7 text-xs lg:h-12 lg:w-20 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             BACK
           </button>
           </div>
