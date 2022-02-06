@@ -1588,7 +1588,7 @@ export default function Home() {
          
         </div>
         
-        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-pink-100 max-h-4xl sm:w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-pink-100 max-h-4xl sm:w-full rounded">
           <OutsideClick>
           <div>
           <div>
