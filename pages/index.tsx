@@ -1260,8 +1260,6 @@ export default function Home() {
         <title>Guess My Name</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex flex-col items-center justify-center flex-1 w-full px-5 text-center">
       
       {showRules ? (
         <>
@@ -1330,6 +1328,8 @@ export default function Home() {
         </>
       ) : null} 
 
+      <main className="flex flex-col items-center justify-center flex-1 w-full px-5 text-center">
+      
       {showModal ? (
         <>
           <div
@@ -1406,7 +1406,7 @@ export default function Home() {
         
         <div className="flex">
  
-        <div className="flex flex-wrap items-center justify-center flex-1 px-10 py-1 mt-3 text-center w-60">
+        <div className="flex flex-wrap items-center justify-center flex-1 px-10 py-1 mt-5 text-center w-60">
         
         <form id="form">
         
