@@ -5,14 +5,12 @@ import {names} from '../data/names'
 //import OutsideClick from "../components/OutsideClick";
 
 import Head from 'next/head'
+//import Modal from '../components/Modal'
 import {
   QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
 
 import PropTypes from "prop-types";
-import { Rules } from '../modals/Rules';
-import { NotName } from '../modals/NotName';
-import { Solution } from '../modals/Solution';
 
 
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
 
   const [solution, setSolution] = useState('')
   const [showRules, setShowRules] = useState(false)
-  const [showNotName, setShowNotName] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const [showSolution, setShowSolution] = useState(false)
 
   const [letter0, setLetter0] = useState('')
@@ -489,7 +487,7 @@ export default function Home() {
           document.getElementById("seven")!.style.border = "solid black 0"
           document.getElementById("eight")!.style.border = "solid black 0"
           setTimeout(closeModal1, 2000)
-          setShowNotName(true)
+          setShowModal(true)
           const input = document.getElementById("one")!;
           input.focus();
         }
@@ -578,7 +576,7 @@ export default function Home() {
           const input = document.getElementById("five")!;
           input.focus();
           setTimeout(closeModal2, 2000)
-          setShowNotName(true)
+          setShowModal(true)
         }
       }
     }
@@ -664,7 +662,7 @@ export default function Home() {
           document.getElementById("fifteen")!.style.border = "solid black 0"
           document.getElementById("sixteen")!.style.border = "solid black 0"
           setTimeout(closeModal3, 2000)
-          setShowNotName(true)
+          setShowModal(true)
           const input = document.getElementById("nine")!;
           input.focus();
         }
@@ -752,7 +750,7 @@ export default function Home() {
           document.getElementById("nineteen")!.style.border = "solid black 0"
           document.getElementById("twenty")!.style.border = "solid black 0"
           setTimeout(closeModal4, 2000)
-          setShowNotName(true)
+          setShowModal(true)
           const input = document.getElementById("thirteen")!;
           input.focus();
         }
@@ -841,7 +839,7 @@ export default function Home() {
           setLetter19('')
           setCount(16)
           setTimeout(closeModal5, 2000)
-          setShowNotName(true)
+          setShowModal(true)
           const input = document.getElementById("seventeen")!;
           input.focus();
         }
@@ -940,31 +938,31 @@ export default function Home() {
 
   function closeModal1() {
     setWordString('')
-    setShowNotName(false)
+    setShowModal(false)
     const input = document.getElementById("one")!;
     input.focus();
   }
   function closeModal2() {
     setWordString(wordString.substring(0, 4))
-    setShowNotName(false)
+    setShowModal(false)
     const input = document.getElementById("five")!;
     input.focus();
   }
   function closeModal3() {
     setWordString(wordString.substring(0, 8))
-    setShowNotName(false)
+    setShowModal(false)
     const input = document.getElementById("nine")!;
     input.focus();
   }
   function closeModal4() {
     setWordString(wordString.substring(0, 12))
-    setShowNotName(false)
+    setShowModal(false)
     const input = document.getElementById("thirteen")!;
     input.focus();
   }
   function closeModal5() {
     setWordString(wordString.substring(0, 16))
-    setShowNotName(false)
+    setShowModal(false)
     const input = document.getElementById("seventeen")!;
     input.focus();
   }
@@ -1263,22 +1261,122 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Rules
-        showRules={showRules}
-        handleClose={() => setShowRules(false)}
-      />
+      {showRules ? (
+        <>
+          <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+            <div className="relative max-w-lg my-6">
+              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+                
+                <div className="flex flex-col items-start mx-6 my-3">
+                  <div className="text-3xl font-semibold">How To Play</div>
+                  <p className="mt-2 text-blueGray-500">Guess the name in 5 tries.</p>
+                  <p className="text-blueGray-500">Each guess must be a valid 4 letter name.</p>
+                  <p className="text-blueGray-500">Hit the enter button to submit.</p>
+                  <p className="text-blueGray-500">If a tile has changed color, that letter is in the name.</p>
+                  <div className="mt-2 font-bold">Examples</div>
+                  <div className="flex flex-col items-start mt-2">
+                    <div className="flex">
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
+                      >K</div>
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7"
+                      >A</div>
+                      <div
+                        className="flex justify-center items-center m-1 font-bold text-white bg-[#c9b458] rounded w-7 h-7"
+                      >T</div>
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
+                      >E</div>
+                    </div>
+                    <p className="text-blueGray-500">The letter <b>T</b> is in the name but in the wrong spot.</p>
+                    <p className="text-blueGray-500">The letters <b>K</b>, <b>A</b>, and <b>E</b> are not in the name.</p>
+                    <div className="flex mt-2">
+                      <div
+                        className="flex justify-center items-center m-1 font-bold text-white bg-[#6aaa64] rounded w-7 h-7"
+                      >B</div>
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
+                      >R</div>
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
+                      >A</div>
+                      <div
+                        className="flex items-center justify-center m-1 font-bold text-white bg-blue-500 rounded w-7 h-7"
+                      >D</div>
+                    </div>
+                    <p className="text-blueGray-500">The letter <b>B</b>  is in the correct spot.</p>
+                    <p className="text-blueGray-500">The letters <b>R</b>, <b>A</b>, and <b>D</b> are not in the name.</p>
+                    
+                  </div>
+                </div>
+    
+                <div className="flex items-center justify-end rounded-b">
+                  <button
+                    className="px-6 py-2 mb-1 mr-1 text-sm font-bold text-red-500 uppercase transition-all duration-150 ease-linear outline-none background-transparent focus:outline-none"
+                    type="button"
+                    onClick={() => setShowRules(false)}
+                  >
+                    Close
+                  </button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
+        </>
+      ) : null} 
 
       <main className="flex flex-col items-center justify-center flex-1 w-full px-5 text-center">
       
-      <NotName
-        showNotName={showNotName}
-        wordString={wordString}
-      />
+      {showModal ? (
+        <>
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+          >
+            <div className="relative w-auto max-w-sm mx-auto my-6">
+              {/*content*/}
+              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+                {/*header*/}
+                <div className="flex items-start justify-between rounded-t">
+                </div>
+                {/*body*/}
+                <div className="relative flex-auto p-6">
+                   <div className="text-lg leading-relaxed text-blueGray-500">
+                    {wordString.substr(-4)} is not in the name list
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
+        </>
+      ) : null}
 
-      <Solution
-        showSolution={showSolution}
-        solution={solution}
-      />
+      {showSolution ? (
+        <>
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none"
+          >
+            <div className="relative w-auto max-w-sm mx-auto my-6">
+              {/*content*/}
+              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+                {/*header*/}
+                <div className="flex items-start justify-between rounded-t">
+                </div>
+                {/*body*/}
+                <div className="relative flex-auto p-6">
+                  <p className="text-lg leading-relaxed text-blueGray-500">
+                    {solution}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
+        </>
+      ) : null}
 
         <div className="flex items-center w-full justify-evenly">
           <QuestionMarkCircleIcon 
@@ -1490,7 +1588,7 @@ export default function Home() {
          
         </div>
         
-        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-blue-100 max-h-4xl sm:w-full rounded">
+        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-pink-100 max-h-4xl sm:w-full rounded">
           <OutsideClick>
           <div>
           <div>
