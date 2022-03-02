@@ -46,7 +46,7 @@ export default function Home() {
   const [letter18, setLetter18] = useState('')
   const [letter19, setLetter19] = useState('')
   const [letter20, setLetter20] = useState('')
-  
+
   const [count, setCount] = useState(0)
 
   const [wordString, setWordString] = useState('')
@@ -56,6 +56,114 @@ export default function Home() {
   const [thirdWord, setThirdWord] = useState('')
   const [fourthWord, setFourthWord] = useState('')
   const [fifthWord, setFifthWord] = useState('')
+
+  const [keyStyleQ, setKeyStyleQ] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleW, setKeyStyleW] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleE, setKeyStyleE] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleR, setKeyStyleR] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleT, setKeyStyleT] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleY, setKeyStyleY] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleU, setKeyStyleU] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleI, setKeyStyleI] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleO, setKeyStyleO] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleP, setKeyStyleP] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleA, setKeyStyleA] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleS, setKeyStyleS] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleD, setKeyStyleD] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleF, setKeyStyleF] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleG, setKeyStyleG] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleH, setKeyStyleH] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleJ, setKeyStyleJ] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleK, setKeyStyleK] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleL, setKeyStyleL] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleZ, setKeyStyleZ] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleX, setKeyStyleX] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleC, setKeyStyleC] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleV, setKeyStyleV] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleB, setKeyStyleB] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleN, setKeyStyleN] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+  const [keyStyleM, setKeyStyleM] = useState('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+
+  function lightenTheKeys(acceptedWord) {
+    if (acceptedWord.includes('Q')) {
+      setKeyStyleQ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('W')) {
+      setKeyStyleW('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('E')) {
+      setKeyStyleE('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('R')) {
+      setKeyStyleR('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('T')) {
+      setKeyStyleT('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('Y')) {
+      setKeyStyleY('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('U')) {
+      setKeyStyleU('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('I')) {
+      setKeyStyleI('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('O')) {
+      setKeyStyleO('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('P')) {
+      setKeyStyleP('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('A')) {
+      setKeyStyleA('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('S')) {
+      setKeyStyleS('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('D')) {
+      setKeyStyleD('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('F')) {
+      setKeyStyleF('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('G')) {
+      setKeyStyleG('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('H')) {
+      setKeyStyleH('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('J')) {
+      setKeyStyleJ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('K')) {
+      setKeyStyleK('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('L')) {
+      setKeyStyleL('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('Z')) {
+      setKeyStyleZ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('X')) {
+      setKeyStyleX('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('C')) {
+      setKeyStyleC('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('V')) {
+      setKeyStyleV('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('B')) {
+      setKeyStyleB('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('N')) {
+      setKeyStyleN('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+    if (acceptedWord.includes('M')) {
+      setKeyStyleM('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-300 rounded hover:bg-blue-700')
+    }
+  }
 
 
   useEffect(() => {
@@ -70,7 +178,7 @@ export default function Home() {
   }, []);
 
   //console.log("solution underneath useEffect:", solution)
-
+  
 
   const letterClicked = (letter) => () => {
     //console.log("letter in letterClicked:", letter)
@@ -372,6 +480,7 @@ export default function Home() {
     if (wordString.length === 4) {
       if (names.includes(wordString.toLowerCase())) {
         setFirstWord(wordString)
+        lightenTheKeys(wordString)
       }
       //console.log("wordString.length=4, firstWord entered:", wordString, firstWord)
     }
@@ -379,6 +488,7 @@ export default function Home() {
     if (wordString.length === 8) {
       if (names.includes(wordString.substring(4, 8).toLowerCase())) {
         setSecondWord(wordString.substring(4, 8))
+        lightenTheKeys(wordString.substring(4, 8))
       }
       //console.log("wordString.length=8, secondWord entered:", wordString, secondWord)
     }
@@ -386,6 +496,7 @@ export default function Home() {
     if (wordString.length === 12) {
       if (names.includes(wordString.substring(8, 12).toLowerCase())) {
         setThirdWord(wordString.substring(8, 12))
+        lightenTheKeys(wordString.substring(8, 12))
       }
       //console.log("wordString.length=12, thirdWord entered:", wordString, thirdWord)
     }
@@ -393,6 +504,7 @@ export default function Home() {
     if (wordString.length === 16) {
       if (names.includes(wordString.substring(12, 16).toLowerCase())) {
         setFourthWord(wordString.substring(12, 16))
+        lightenTheKeys(wordString.substring(12, 16))
       }
       //console.log("wordString.length=16, fourthWord entered:", wordString, fourthWord)
     }
@@ -400,6 +512,7 @@ export default function Home() {
     if (wordString.length === 20) {
       if (names.includes(wordString.substring(16, 20).toLowerCase())) {
         setFifthWord(wordString.substring(16, 20))
+        lightenTheKeys(wordString.substring(16, 20))
       }
       //console.log("wordString.length=20, fifthWord entered:", wordString, fifthWord)
     }
@@ -1213,6 +1326,32 @@ export default function Home() {
     document.getElementById("eighteen")!.style.background = "rgb(59, 130, 246)"
     document.getElementById("nineteen")!.style.background = "rgb(59, 130, 246)"
     document.getElementById("twenty")!.style.background = "rgb(59, 130, 246)"
+    setKeyStyleQ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleW('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleE('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleR('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleT('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleY('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleU('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleI('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleO('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleP('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleA('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleS('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleD('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleF('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleG('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleH('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleJ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleK('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleL('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleZ('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleX('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleC('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleV('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleB('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleN('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
+    setKeyStyleM('h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700')
     const input = document.getElementById("one")!;
     input.focus();
     setSolution(names[Math.floor(Math.random() * names.length)].toUpperCase());
@@ -1285,11 +1424,11 @@ export default function Home() {
             onClick={() => setShowRules(true)}
             className="h-6 text-gray-500 cursor-pointer" 
           />
-          <h1 className="text-2xl lg:text-4xl font-semibold">
+          <h1 className="text-2xl font-semibold lg:text-4xl">
             GUESS MY NAME
           </h1>
           <div
-            className="bg-white w-6 h-6" 
+            className="w-6 h-6 bg-white" 
           ></div>
         </div>
 
@@ -1318,7 +1457,7 @@ export default function Home() {
           value={letter0}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1326,7 +1465,7 @@ export default function Home() {
           value={letter1}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1334,7 +1473,7 @@ export default function Home() {
           value={letter2}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1342,7 +1481,7 @@ export default function Home() {
           value={letter3}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1350,7 +1489,7 @@ export default function Home() {
           value={letter4}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1358,7 +1497,7 @@ export default function Home() {
           value={letter5}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1366,7 +1505,7 @@ export default function Home() {
           value={letter6}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1374,7 +1513,7 @@ export default function Home() {
           value={letter7}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1382,7 +1521,7 @@ export default function Home() {
           value={letter8}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1390,7 +1529,7 @@ export default function Home() {
           value={letter9}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1398,7 +1537,7 @@ export default function Home() {
           value={letter10}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1406,7 +1545,7 @@ export default function Home() {
           value={letter11}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1414,7 +1553,7 @@ export default function Home() {
           value={letter12}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1422,7 +1561,7 @@ export default function Home() {
           value={letter13}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1430,7 +1569,7 @@ export default function Home() {
           value={letter14}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1438,7 +1577,7 @@ export default function Home() {
           value={letter15}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1446,7 +1585,7 @@ export default function Home() {
           value={letter16}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1454,7 +1593,7 @@ export default function Home() {
           value={letter17}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1462,7 +1601,7 @@ export default function Home() {
           value={letter18}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <input
           type="text"
@@ -1470,7 +1609,7 @@ export default function Home() {
           value={letter19}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className='focus:text-transparent m-1 font-bold text-center text-white bg-blue-500 rounded w-7 h-7'
+          className='m-1 font-bold text-center text-white bg-blue-500 rounded focus:text-transparent w-7 h-7'
         />
         <div className="mt-[-70px]">
         <input 
@@ -1479,7 +1618,7 @@ export default function Home() {
           value={letter20}
           onChange={(event) => letterTyped(event.target.value)}
           onKeyDown={handleKeypress}
-          className="focus:outline-none focus:text-transparent font-bold text-center text-blue-100 bg-transparent rounded w-7 h-7" 
+          className="font-bold text-center text-blue-100 bg-transparent rounded focus:outline-none focus:text-transparent w-7 h-7" 
         />
         </div>
         <button onClick={handleSubmit} type="submit"></button>
@@ -1490,67 +1629,67 @@ export default function Home() {
          
         </div>
         
-        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-blue-100 max-h-4xl sm:w-full rounded">
+        <div className="flex flex-wrap items-center justify-around max-w-2xl p-2 mt-5 bg-blue-100 rounded max-h-4xl sm:w-full">
           <OutsideClick>
           <div>
           <div>
-          <button id="q" onClick={letterClicked('Q')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="q" onClick={letterClicked('Q')} className={keyStyleQ}>
             Q
           </button>
-          <button id="w" onClick={letterClicked('W')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="w" onClick={letterClicked('W')} className={keyStyleW}>
             W
           </button>
-          <button id="e" onClick={letterClicked('E')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="e" onClick={letterClicked('E')} className={keyStyleE}>
             E
           </button>
-          <button id="r" onClick={letterClicked('R')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="r" onClick={letterClicked('R')} className={keyStyleR}>
             R
           </button>
-          <button id="t" onClick={letterClicked('T')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="t" onClick={letterClicked('T')} className={keyStyleT}>
             T
           </button>
-          <button id="y" onClick={letterClicked('Y')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="y" onClick={letterClicked('Y')} className={keyStyleY}>
             Y
           </button>
-          <button id="u" onClick={letterClicked('U')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="u" onClick={letterClicked('U')} className={keyStyleU}>
             U
           </button>
-          <button id="i" onClick={letterClicked('I')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="i" onClick={letterClicked('I')} className={keyStyleI}>
             I
           </button>
-          <button id="o" onClick={letterClicked('O')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="o" onClick={letterClicked('O')} className={keyStyleO}>
             O
           </button>
-          <button id="p" onClick={letterClicked('P')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="p" onClick={letterClicked('P')} className={keyStyleP}>
             P
           </button>
           </div>
           <div>
-          <button id="a" onClick={letterClicked('A')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="a" onClick={letterClicked('A')} className={keyStyleA}>
             A
           </button>
-          <button id="s" onClick={letterClicked('S')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="s" onClick={letterClicked('S')} className={keyStyleS}>
             S
           </button>
-          <button id="d" onClick={letterClicked('D')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="d" onClick={letterClicked('D')} className={keyStyleD}>
             D
           </button>
-          <button id="f" onClick={letterClicked('F')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="f" onClick={letterClicked('F')} className={keyStyleF}>
             F
           </button>
-          <button id="g" onClick={letterClicked('G')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="g" onClick={letterClicked('G')} className={keyStyleG}>
             G
           </button>
-          <button id="h" onClick={letterClicked('H')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="h" onClick={letterClicked('H')} className={keyStyleH}>
             H
           </button>
-          <button id="j" onClick={letterClicked('J')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="j" onClick={letterClicked('J')} className={keyStyleJ}>
             J
           </button>
-          <button id="k" onClick={letterClicked('K')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="k" onClick={letterClicked('K')} className={keyStyleK}>
             K
           </button>
-          <button id="l" onClick={letterClicked('L')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="l" onClick={letterClicked('L')} className={keyStyleL}>
             L
           </button>
           </div>
@@ -1558,25 +1697,25 @@ export default function Home() {
           <button id="enter" onClick={enter} className="w-[55px] h-7 text-xs lg:h-12 lg:w-20 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
             ENTER
           </button>
-          <button id="z" onClick={letterClicked('Z')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="z" onClick={letterClicked('Z')} className={keyStyleZ}>
             Z
           </button>
-          <button id="x" onClick={letterClicked('X')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="x" onClick={letterClicked('X')} className={keyStyleX}>
             X
           </button>
-          <button id="c" onClick={letterClicked('C')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="c" onClick={letterClicked('C')} className={keyStyleC}>
             C
           </button>
-          <button id="v" onClick={letterClicked('V')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="v" onClick={letterClicked('V')} className={keyStyleV}>
             V
           </button>
-          <button id="b" onClick={letterClicked('B')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="b" onClick={letterClicked('B')} className={keyStyleB}>
             B
           </button>
-          <button id="n" onClick={letterClicked('N')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="n" onClick={letterClicked('N')} className={keyStyleN}>
             N
           </button>
-          <button id="m" onClick={letterClicked('M')} className="h-7 w-6 text-xs lg:h-12 lg:w-11 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">
+          <button id="m" onClick={letterClicked('M')} className={keyStyleM}>
             M
           </button>
           <button id="back" onClick={back} className="w-11 h-7 text-xs lg:h-12 lg:w-20 lg:text-base m-0.5 lg:m-1 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-700">

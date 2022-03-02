@@ -18,9 +18,6 @@ update:
     git push
 
 
-to do:
-    modularization, refactoring of code
-    look into react hooks
 
 
 
