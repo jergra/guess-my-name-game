@@ -4,8 +4,6 @@ C:\dev\guess-my-name-game
 
 This is a Wordle variant.
 
-Code from C:\dev\guess-this-name has been reduced, functionality improved.
-
 start:
     npm run dev 
 
